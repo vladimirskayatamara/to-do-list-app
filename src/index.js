@@ -1,10 +1,14 @@
-import React from 'react';
+import React from 'react'; // ВСЕГДА импортируем реакт в любой компонент
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')); //div #root - единственный элемент, внутрнь которого кладется всё приложение. оно запускается целиком из данного файлика, index.js
+// ReactDOM - обращение к библиотеке
+// render - вызов метода
+// <App/> - название комонента для рендеринга
+//document.getElementById('root') - куда складывем приложение
 root.render(
   <React.StrictMode>
     <App />
